@@ -1,0 +1,197 @@
+/* *COMMON CSS START */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&family=Ubuntu:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: var(--primaryFont);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.align_center{
+    align-items: center;
+}
+
+:root{
+    --primaryFont: 'Ubuntu', sans-serif;
+    --secendaryFont: 'Open Sans', sans-serif;
+    --thirdFont: 'Abril Fatface', cursive;
+    --primaryColor: #0f2f44;
+    --yellowColor: #ffc712;
+    --parpulColor: #8484bf;
+}
+.btn{
+    background-color: var(--yellowColor);
+    color: black;
+    font-size: 20px;
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+/* *COMMON CSS ENDS */
+
+/* *HEADER START */
+header{
+    background-color: var(--primaryColor);
+    padding: 16px 0;
+    color: white;
+}
+.welcome, .opening{
+    width: 50%;
+}
+.opening{
+    text-align: right;
+}
+/* *HEADER ENDS */
+
+/* *NAVBAR START */
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+nav .menu ul li a{
+    color: black;
+    padding: 40px 19px;
+    display: inline-block;
+    font-weight: 500;
+    transition: 0.35s;
+}
+nav .menu ul li:hover > a{
+    background-color: #fff9e6;
+    color: var(--yellowColor)
+}
+nav ul li .sub_menu{
+    position: absolute;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-top: 5px solid var(--yellowColor);
+    width: 220px;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    margin-left: 50px;
+}
+nav ul li:hover > .sub_menu{
+    background-color: #fff9e6;
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0px;
+}
+nav ul li .sub_menu li{
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+nav ul li .sub_menu li a{
+    color: black; 
+    transition: 0.3s;
+    padding: 20px;
+}
+nav ul li .sub_menu li:hover > a{
+    background-color: white;
+    width: 100%;
+    color: var(--yellowColor);
+}
+nav ul li .sub_menu .sub_menu{
+    right: 100%;
+    top: 0;
+}
+nav .menu .search{
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50px;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+/* *NAVBAR ENDS */
+
+/* *BANNER SECTION STARE */
+#banner{
+    background-image: url(../images/banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.banner_cnt{
+    width: 40%;
+}
+#banner .container, #banner .row{
+  height: 100%; 
+}
+#banner .banner_cnt h2{
+    font-size: 50px;
+    font-weight:300;
+    color: var(--primaryColor);
+    line-height: 17px;
+}
+#banner .banner_cnt h1{
+    font-size: 80px;
+    font-weight: 400;
+    font-family: var(--thirdFont);
+    color: var(--primaryColor);
+    line-height: 74px;
+
+}
+#banner .banner_cnt h3{
+    font-size: 32px;
+    font-family: var(--primaryFont);
+    font-weight: 400;
+    color: var(--parpulColor);
+    letter-spacing: 10px;
+}
+#banner .banner_cnt p{
+    font-size: 14px;
+    font-family: var(--secendaryFont);
+    line-height: 23px;
+    margin-top: 20px;
+}
+#banner .banner_cnt .btn{
+    background-color: var(--parpulColor);
+}
+#banner .banner_cnt .play{
+    background-color: white;
+    color: var(--parpulColor);
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+/* *BANNER SECTION ENDS */
+
+
+
+
+
+
